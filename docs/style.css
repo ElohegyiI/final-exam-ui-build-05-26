@@ -95,7 +95,7 @@ header .material-symbols-outlined {
   margin-bottom: 100px;
   background-color: #efd592;
   width: 400px;
-  height: 500px;
+  min-height: 500px;
 }
 
 .movies-container .moviecard .number {
