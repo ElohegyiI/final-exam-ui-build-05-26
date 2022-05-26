@@ -1,0 +1,158 @@
+/* CSS reset start */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a {
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+/* CSS reset end */
+
+body {
+  background-color: #242d38;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #efd592;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  color: #efd592;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+@media (max-width: 550px) {
+  header h1 {
+    font-size: 16px;
+  }
+}
+
+header .material-symbols-outlined {
+  font-size: 24px;
+  color: #efd592;
+}
+
+.movies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px 20px;
+  flex-wrap: wrap;
+}
+
+.movies-container .moviecard {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 90px 20px;
+  max-width: 1000px;
+  margin-bottom: 100px;
+  background-color: #efd592;
+  width: 400px;
+  height: 500px;
+}
+
+.movies-container .moviecard .number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -20px;
+  right: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  border: 1px solid #efd592;
+  background-color: #242d38;
+  color: #efd592;
+  font-weight: 200;
+  transform: translate(50%);
+}
+
+.movies-container .moviecard .textDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 472px;
+  padding: 40px;
+}
+
+.movies-container .moviecard .title {
+  min-height: 100px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.movies-container .moviecard .sub {
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid #242d38;
+}
+
+.movies-container .moviecard .text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.movies-container .moviecard button {
+  position: absolute;
+  bottom: -30px;
+  width: calc(100% - 40px);
+  height: 60px;
+  font-size: 14px;
+  background-color: #242d38;
+  color: #efd592;
+  border: 1px solid #efd592;
+}
+
+.movies-container .moviecard button:hover {
+  background-color: #efd592;
+  color: #242d38;
+  border: 1px solid #242d38;
+}
